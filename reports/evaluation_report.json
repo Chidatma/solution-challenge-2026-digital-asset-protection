@@ -1,0 +1,57 @@
+{
+  "dataset_root": "D:\\Hackthon_Challenges\\GDG_Solution_Challenge\\digital-asset-protection\\data\\raw",
+  "started_at": 1776877536.5464253,
+  "modalities_selected": [
+    "image",
+    "video",
+    "audio"
+  ],
+  "modalities": {
+    "image": {
+      "modality": "image",
+      "originals": 1,
+      "positives": 1,
+      "negatives": 1,
+      "true_positives": 1,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "video": {
+      "modality": "video",
+      "originals": 1,
+      "positives": 1,
+      "negatives": 1,
+      "true_positives": 1,
+      "false_positives": 0,
+      "true_negatives": 1,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0
+    },
+    "audio": {
+      "modality": "audio",
+      "originals": 0,
+      "positives": 0,
+      "negatives": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 0,
+      "false_negatives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "accuracy": 0.0
+    }
+  },
+  "summary": {
+    "macro_precision": 0.6667,
+    "macro_recall": 0.6667,
+    "macro_accuracy": 0.6667,
+    "finished_at": 1776877584.8205938,
+    "elapsed_seconds": 48.27
+  }
+}
