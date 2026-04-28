@@ -3,8 +3,8 @@
 Production-style multimodal piracy detection and ownership verification for:
 
 - Images (CLIP + DINOv2)
-- Videos (frame extraction + temporal/summary matching)
-- Audio (Chromaprint + Wav2Vec2)
+- Videos frame extraction + temporal/summary matching
+- Audio Chromaprint + Wav2Vec2
 - Watermark verification (DCT + ECDSA)
 - Vector search Milvus
 
