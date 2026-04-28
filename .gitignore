@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *.pyd
+*$py.class
 .pytest_cache/
 .coverage
 htmlcov/
@@ -13,11 +14,22 @@ build/
 dist/
 *.egg-info/
 
-# Environments / secrets
+# Virtual environments
+.venv/
+.venv_*/
+.venv_py*/
 venv/
+env/
+
+# Environments / secrets
 .env
 .env.*
 *.env
+!.env.example
+
+# Local databases / backups
+*.sqlite3
+*.sqlite3.bak
 
 # Editors
 .vscode/
@@ -38,3 +50,6 @@ logs/
 # OS
 Thumbs.db
 .DS_Store
+
+# Django uploads (keep if you want to version media)
+# media/
