@@ -1,3 +1,4 @@
+# AI / pipeline dependencies
 librosa
 soundfile
 pyacoustid          # Chromaprint bindings
@@ -8,3 +9,13 @@ fastapi
 uvicorn
 requests
 yt-dlp
+
+# Backend (SENTINEL Django API)
+Django==4.2.7
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.0
+pymongo[srv]==4.6.0
+python-decouple==3.8
+Pillow==10.1.0
+python-dotenv==1.0.0
+dnspython==2.4.2
