@@ -261,3 +261,64 @@ Production migration path:
 - Replace polling with official webhooks/streaming where available
 - Persist cases/jobs in Postgres
 - Move queue to Kafka/RabbitMQ/SQS
+
+---
+
+## Backend (SENTINEL Django API)
+
+Digital asset protection backend built with Django REST Framework, JWT auth, and MongoDB metadata storage.
+
+### Features
+
+- Email-based custom user authentication
+- JWT login with access and refresh tokens
+- Asset upload for mp4, jpg, jpeg, png
+- SHA256 duplicate detection
+- MongoDB storage for asset metadata
+
+### Quick Setup (Windows)
+
+1. Create and activate virtual environment:
+
+```powershell
+py -3.11 -m venv .venv
+& ".venv/Scripts/Activate.ps1"
+```
+
+2. Install dependencies:
+
+```powershell
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m pip install django-extensions
+```
+
+3. Configure environment:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+4. Run migrations and start server:
+
+```powershell
+python manage.py migrate
+python manage.py runserver
+```
+
+Server URL: http://127.0.0.1:8000/
+
+### API Endpoints
+
+Auth:
+
+- POST `/api/auth/register/`
+- POST `/api/auth/login/`
+- GET `/api/auth/profile/`
+
+Assets:
+
+- POST `/api/assets/upload/`
+- GET `/api/assets/`
+- GET `/api/assets/<asset_id>/`
+- DELETE `/api/assets/<asset_id>/`
