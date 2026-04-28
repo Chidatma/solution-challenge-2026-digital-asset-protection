@@ -1,0 +1,40 @@
+# Python / tooling
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Environments / secrets
+venv/
+.env
+.env.*
+*.env
+
+# Editors
+.vscode/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Large / generated data artifacts (keep code + small samples only)
+/data/processed/
+/data/raw/
+/data/**/media_cache/
+/data/**/*.part
+
+# OS
+Thumbs.db
+.DS_Store
